@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang"en-us">
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <title>Erin's Resume</title>
+   <!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato|PT+Sans|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="CSS/normalize.css">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .slick-slide {
+      margin: 0px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+  </style>
+</head>
+
+<body>
+<nav class = "left-side">
+<section class = "picture slider">
+<div><img src="/Users/ianroberts/Desktop/Fancy-Resume/IMAGES/profile.png"/></div>
+<div><img src="/Users/ianroberts/Desktop/Fancy-Resume/IMAGES/wedding.png"/></div>
+<div><img src="/Users/ianroberts/Desktop/Fancy-Resume/IMAGES/patti.png"/></div>
+<div><img src="/Users/ianroberts/Desktop/Fancy-Resume/IMAGES/korea.png"/></div>
+</div>
+</section>
+<h1 class ="name">ERIN RHIM</h1>
+<p>Hardworking professional with over seven years of experience in technical roles.  Seeking opportunity to leverage my expertise in the software industry combined with the newly obtained skills including HTML, CSS, and Javascript into a UX/UI designer role.</p>
+<hr>
+<h1>Contact Info</h1>
+<ul class = "contact-info">
+<li>(608) 320 – 2130</li>
+<li>Erin.rhim@gmail.com</li>
+<li>Costa Mesa, CA</li>
+</ul>
+<hr>
+<h1>Professional Skills</h1>
+<ul class= "skills">
+<li>Adobe Photoshop</li>
+<li>Adobe Illustrator</li>
+<li>HTML 5 & CSS 3</li>
+<li>Java Script</li>
+<li>Sketch</li>
+<li>MySQL</li>
+</ul>
+</nav>
+
+<nav class = "right-side">
+<section class = "experience">
+<div id ="flip">PROFESSIONAL EXPERIENCE</div>
+<div id ="panel">
+<h2>APPLICATION CONSULTANT, EPICOR</h2>
+<p class = "period">DEC 2014 - CURRENT</p>
+<ul class = "job-responsibility">
+<li class = "responsibility">Gain understanding of clients’ business processes, document identify process re-engineering opportunities to improve efficiency</li>
+<li class = "responsibility">Develop innovative solutions involving third party application integrations to meet client’s project requirements and minimize customization needs</li>
+</ul>
+<h2>SR. ASSOCIATE, HYUNDAI MOTORS</h2>
+<p class = "period">APR 2011 – DEC 2014</p>
+<ul class = "job-responsibility">
+<li class = "responsibility">Served as project lead on major outsourcing projects that included vendor selection, supervising junior staff, and driving successful implementation</li>
+<li class = "responsibility">Led a project to revamp the centralized inventory system to improve accuracy, timeliness, and customer satisfaction</li>
+<li class = "responsibility">Partnered with a learning management system vendor to develop online classes used to train 2,000 Hyundai sales representatives</li> 
+</ul>
+<h2>PROJECT MANAGER, SCHEDULESOFT</h2>
+<p class = "period">JUNE 2009 – FEB 2011</p>
+<ul class = "job-responsibility">
+<li class = "responsibility">classImplemented automated labor scheduling system, which eliminated management favoritism and thing  a reduced annual overtime costs by $40,000 for multiple manufacturing plants of Kraft Foods</li>
+<li class = "responsibility">Use project management tools to document, manage and share information with development team members, managers, and C-level stakeholders</li>
+</ul>
+</div>
+</section>
+
+<section class ="education">
+<h1>EDUCATION</h1>
+<h2>BLOC – DESIGNER TRACK</h2>
+<p class ="period">NOV 2016 – CURRENT</p>
+<p class ="education-info">Learning how to research, design, and build the frontend and UI for modern web applications.</p>
+<h2>UNIVERSITY OF WISCONSIN – MADISON</h2>
+<p class ="period">2004 – 2009</p>
+<p class ="education-info">Bachelor of Business Administration: Marketing with honors</p>
+</section>
+</nav>
+
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+ <script type="text/javascript" src="slick/slick.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".picture").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+  </script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+</body>
+</html>
